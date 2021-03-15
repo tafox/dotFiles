@@ -4,8 +4,18 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+"set spellcheck
+set spell
+"autocomplete
+set complete+=kspell
+
 " Remap insert mode jk to make it easier to return to command mode 
 imap jj <esc>
+imap <Tab> <C-P>
+
+" Remap ctrl-s to save
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
 
 " Set line numbers
 set number
@@ -38,3 +48,6 @@ set ruler
 
 " Encoding
 set encoding=utf-8
+
+" Line limit 80 characters
+set textwidth=80
