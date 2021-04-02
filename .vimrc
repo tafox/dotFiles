@@ -17,8 +17,8 @@ imap <Tab> <C-P>
 nmap <c-s> :w<CR>
 imap <c-s> <Esc>:w<CR>a
 
-" Set line numbers
-set number
+" Set relative line numbers, much easier for navigation and editing
+set relativenumber
 
 "Set syntax highlighting
 syntax on
